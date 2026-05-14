@@ -20,7 +20,10 @@
     "discount": 20,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident!",
-    "reviews": [{ "rating": 4.8, "text": "Excellent build quality." }, { "rating": 4.8, "text": "Looks great in my living room." }],
+    "reviews": [
+      { "rating": 4.8, "text": "Excellent build quality." },
+      { "rating": 4.8, "text": "Looks great in my living room." }
+    ],
     "avgRating": 4.7
   },
   {
@@ -31,7 +34,10 @@
     "price": 173,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident!",
-    "reviews": [{ "rating": 4.6, "text": "Very nice sofa." }, { "rating": 4.9, "text": "Highly recommend!" }],
+    "reviews": [
+      { "rating": 4.6, "text": "Very nice sofa." },
+      { "rating": 4.9, "text": "Highly recommend!" }
+    ],
     "avgRating": 4.7
   },
   {
@@ -42,7 +48,10 @@
     "price": 163,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident!",
-    "reviews": [{ "rating": 4.6, "text": "Super cozy." }, { "rating": 4.9, "text": "Best purchase this year!" }],
+    "reviews": [
+      { "rating": 4.6, "text": "Super cozy." },
+      { "rating": 4.9, "text": "Best purchase this year!" }
+    ],
     "avgRating": 4.7
   },
   {
@@ -53,7 +62,10 @@
     "price": 163,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.6, "text": "Luxurious feel." }, { "rating": 4.9, "text": "Amazing value." }],
+    "reviews": [
+      { "rating": 4.6, "text": "Luxurious feel." },
+      { "rating": 4.9, "text": "Amazing value." }
+    ],
     "avgRating": 4.7
   },
   {
@@ -64,7 +76,10 @@
     "price": 163,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.6, "text": "Very plush!" }, { "rating": 4.9, "text": "Love it." }],
+    "reviews": [
+      { "rating": 4.6, "text": "Very plush!" },
+      { "rating": 4.9, "text": "Love it." }
+    ],
     "avgRating": 4.7
   },
   {
@@ -75,7 +90,10 @@
     "price": 99,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.6, "text": "Stylish and comfortable." }, { "rating": 4.9, "text": "Perfect for reading." }],
+    "reviews": [
+      { "rating": 4.6, "text": "Stylish and comfortable." },
+      { "rating": 4.9, "text": "Perfect for reading." }
+    ],
     "avgRating": 4.7
   },
   {
@@ -87,7 +105,10 @@
     "discount": 15,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.6, "text": "Great design." }, { "rating": 4.9, "text": "Excellent chair." }],
+    "reviews": [
+      { "rating": 4.6, "text": "Great design." },
+      { "rating": 4.9, "text": "Excellent chair." }
+    ],
     "avgRating": 4.7
   },
   {
@@ -99,7 +120,10 @@
     "discount": 35,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.6, "text": "Very sturdy." }, { "rating": 4.9, "text": "Looks premium." }],
+    "reviews": [
+      { "rating": 4.6, "text": "Very sturdy." },
+      { "rating": 4.9, "text": "Looks premium." }
+    ],
     "avgRating": 4.7
   },
   {
@@ -110,7 +134,10 @@
     "price": 799,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.8, "text": "Incredible phone." }, { "rating": 4.9, "text": "Worth every penny." }],
+    "reviews": [
+      { "rating": 4.8, "text": "Incredible phone." },
+      { "rating": 4.9, "text": "Worth every penny." }
+    ],
     "avgRating": 4.8
   },
   {
@@ -121,7 +148,10 @@
     "price": 799,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.8, "text": "Amazing camera." }, { "rating": 4.9, "text": "Best phone ever." }],
+    "reviews": [
+      { "rating": 4.8, "text": "Amazing camera." },
+      { "rating": 4.9, "text": "Best phone ever." }
+    ],
     "avgRating": 4.8
   },
   {
@@ -133,7 +163,10 @@
     "discount": 10,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.8, "text": "Great value phone." }, { "rating": 4.9, "text": "Very fast." }],
+    "reviews": [
+      { "rating": 4.8, "text": "Great value phone." },
+      { "rating": 4.9, "text": "Very fast." }
+    ],
     "avgRating": 4.8
   },
   {
@@ -145,7 +178,10 @@
     "discount": 5,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.8, "text": "Smooth performance." }, { "rating": 4.9, "text": "Love the design." }],
+    "reviews": [
+      { "rating": 4.8, "text": "Smooth performance." },
+      { "rating": 4.9, "text": "Love the design." }
+    ],
     "avgRating": 4.8
   },
   {
@@ -156,7 +192,10 @@
     "price": 899,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.8, "text": "Top of the line." }, { "rating": 4.9, "text": "Worth the upgrade." }],
+    "reviews": [
+      { "rating": 4.8, "text": "Top of the line." },
+      { "rating": 4.9, "text": "Worth the upgrade." }
+    ],
     "avgRating": 4.8
   },
   {
@@ -167,7 +206,10 @@
     "price": 699,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.8, "text": "Great Android phone." }, { "rating": 4.9, "text": "Excellent display." }],
+    "reviews": [
+      { "rating": 4.8, "text": "Great Android phone." },
+      { "rating": 4.9, "text": "Excellent display." }
+    ],
     "avgRating": 4.8
   },
   {
@@ -178,7 +220,10 @@
     "price": 299,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.8, "text": "Timeless design." }, { "rating": 4.9, "text": "Great gift." }],
+    "reviews": [
+      { "rating": 4.8, "text": "Timeless design." },
+      { "rating": 4.9, "text": "Great gift." }
+    ],
     "avgRating": 4.8
   },
   {
@@ -189,7 +234,10 @@
     "price": 299,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.8, "text": "Very reliable." }, { "rating": 4.9, "text": "Classic look." }],
+    "reviews": [
+      { "rating": 4.8, "text": "Very reliable." },
+      { "rating": 4.9, "text": "Classic look." }
+    ],
     "avgRating": 4.8
   },
   {
@@ -200,7 +248,10 @@
     "price": 299,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.8, "text": "Elegant." }, { "rating": 4.9, "text": "Beautiful watch." }],
+    "reviews": [
+      { "rating": 4.8, "text": "Elegant." },
+      { "rating": 4.9, "text": "Beautiful watch." }
+    ],
     "avgRating": 4.8
   },
   {
@@ -211,7 +262,10 @@
     "price": 399,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.8, "text": "Best smartwatch." }, { "rating": 4.9, "text": "Love the features." }],
+    "reviews": [
+      { "rating": 4.8, "text": "Best smartwatch." },
+      { "rating": 4.9, "text": "Love the features." }
+    ],
     "avgRating": 4.8
   },
   {
@@ -222,7 +276,10 @@
     "price": 199,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.8, "text": "Great sound quality." }, { "rating": 4.9, "text": "Very comfortable." }],
+    "reviews": [
+      { "rating": 4.8, "text": "Great sound quality." },
+      { "rating": 4.9, "text": "Very comfortable." }
+    ],
     "avgRating": 4.8
   },
   {
@@ -233,7 +290,10 @@
     "price": 199,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.8, "text": "Noise cancelling is great." }, { "rating": 4.9, "text": "Perfect for travel." }],
+    "reviews": [
+      { "rating": 4.8, "text": "Noise cancelling is great." },
+      { "rating": 4.9, "text": "Perfect for travel." }
+    ],
     "avgRating": 4.8
   },
   {
@@ -244,7 +304,10 @@
     "price": 169,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.8, "text": "Great value." }, { "rating": 4.9, "text": "Sound is amazing." }],
+    "reviews": [
+      { "rating": 4.8, "text": "Great value." },
+      { "rating": 4.9, "text": "Sound is amazing." }
+    ],
     "avgRating": 4.8
   },
   {
@@ -255,7 +318,10 @@
     "price": 139,
     "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "reviews": [{ "rating": 4.8, "text": "Battery lasts forever." }, { "rating": 4.9, "text": "Very lightweight." }],
+    "reviews": [
+      { "rating": 4.8, "text": "Battery lasts forever." },
+      { "rating": 4.9, "text": "Very lightweight." }
+    ],
     "avgRating": 4.8
   }
 ]

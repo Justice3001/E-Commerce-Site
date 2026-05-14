@@ -15,7 +15,12 @@ export default function ProductCard({ title, productItem }) {
       {title === 'Big Discount' || title === 'Deals' ? (
         <span className="discount">{productItem.discount}% Off</span>
       ) : null}
-      <img loading="lazy" onClick={() => navigate(`/shop/${productItem.id}`)} src={productItem.imgUrl} alt={productItem.productName} />
+      <img
+        loading="lazy"
+        onClick={() => navigate(`/shop/${productItem.id}`)}
+        src={productItem.imgUrl}
+        alt={productItem.productName}
+      />
       <div className="product-like">
         <ion-icon name="heart-outline" />
       </div>
@@ -30,10 +35,15 @@ export default function ProductCard({ title, productItem }) {
         </div>
         <div className="price">
           <h4>${productItem.price}</h4>
-          <button aria-label="Add to cart" type="submit" className="add" onClick={() => {
-            dispatch(addToCart({ product: productItem, num: 1 }))
-            toast.success('Added to cart!')
-          }}>
+          <button
+            aria-label="Add to cart"
+            type="submit"
+            className="add"
+            onClick={() => {
+              dispatch(addToCart({ product: productItem, num: 1 }))
+              toast.success('Added to cart!')
+            }}
+          >
             <ion-icon name="add" />
           </button>
         </div>

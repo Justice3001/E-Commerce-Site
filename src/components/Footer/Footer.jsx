@@ -11,7 +11,10 @@ export default function Footer() {
               <ion-icon name="bag" />
               <h1>Plushify</h1>
             </div>
-            <p>Explore our curated collection of stylish clothes, elegant watches, and cutting-edge phones. Elevate your fashion and tech game with our diverse range.</p>
+            <p>
+              Explore our curated collection of stylish clothes, elegant watches, and cutting-edge phones. Elevate your
+              fashion and tech game with our diverse range.
+            </p>
           </Col>
           <Col md={3} sm={5} className="box">
             <h2>About Us</h2>

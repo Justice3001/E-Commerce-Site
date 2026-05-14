@@ -8,11 +8,7 @@ export default function SearchBar({ setFilterList }) {
   const handleChange = (e) => {
     const value = e.target.value
     setSearchWord(value)
-    setFilterList(
-      products.filter((item) =>
-        item.productName?.toLowerCase().includes(value.toLowerCase())
-      )
-    )
+    setFilterList(products.filter((item) => item.productName?.toLowerCase().includes(value.toLowerCase())))
   }
 
   return (

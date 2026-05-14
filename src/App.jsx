@@ -15,7 +15,15 @@ function App() {
   return (
     <Suspense fallback={<Loader />}>
       <Router>
-        <ToastContainer position="top-right" autoClose={1000} hideProgressBar={false} closeOnClick pauseOnFocusLoss draggable theme="light" />
+        <ToastContainer
+          position="top-right"
+          autoClose={1000}
+          hideProgressBar={false}
+          closeOnClick
+          pauseOnFocusLoss
+          draggable
+          theme="light"
+        />
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />

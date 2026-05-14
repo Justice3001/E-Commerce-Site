@@ -16,7 +16,7 @@ Plushify is a full-stack single-page e-commerce application featuring product br
 - **Cart Persistence** — Cart data persists across sessions via `localStorage`
 - **Lazy Loading** — Route-level code splitting with `React.lazy` and `Suspense`
 - **Responsive Design** — Mobile-first layout using React-Bootstrap
-- **REST API** — Express backend serving product data at `/api/products`
+- **REST API** — Express backend serving product data at `/api/products` with security headers, rate limiting, and request logging
 - **Docker** — Run the entire stack with a single command
 
 ---
@@ -25,7 +25,7 @@ Plushify is a full-stack single-page e-commerce application featuring product br
 
 ### Prerequisites
 
-- Node.js 18+
+- Node.js 20+
 - npm 9+
 - Docker (optional, for containerized setup)
 
@@ -37,6 +37,9 @@ npm install
 
 # Install server dependencies
 cd server && npm install && cd ..
+
+# Copy environment config
+cp .env.example server/.env
 
 # Start the frontend (Vite dev server)
 npm run dev
@@ -73,11 +76,19 @@ Outputs a static site to `dist/` ready for deployment (Vercel, Netlify, etc.).
 
 The backend runs on port `4000` and provides the following endpoints:
 
-| Endpoint | Description |
-|---|---|
-| `GET /api/health` | Health check |
-| `GET /api/products` | List all products (optional `?category=sofa` filter) |
-| `GET /api/products/:id` | Get a single product by ID |
+| Endpoint                | Description                                          |
+| ----------------------- | ---------------------------------------------------- |
+| `GET /api/health`       | Health check                                         |
+| `GET /api/products`     | List all products (optional `?category=sofa` filter) |
+| `GET /api/products/:id` | Get a single product by ID                           |
+
+### Environment Variables
+
+| Variable      | Default       | Description         |
+| ------------- | ------------- | ------------------- |
+| `PORT`        | `4000`        | API server port     |
+| `NODE_ENV`    | `development` | Environment mode    |
+| `CORS_ORIGIN` | `*`           | Allowed CORS origin |
 
 ## Project Structure
 
@@ -103,9 +114,17 @@ The backend runs on port `4000` and provides the following endpoints:
 ├── Dockerfile.backend        # Backend container (node)
 ├── nginx.conf                # Reverse proxy config
 ├── docker-compose.yml        # Multi-service orchestration
-├── .github/workflows/ci.yml  # CI pipeline
+├── .github/
+│   ├── workflows/ci.yml       # CI pipeline (lint + build, Node 20 & 22)
+│   ├── dependabot.yml         # Automated dependency updates
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   └── ISSUE_TEMPLATE/        # Bug report & feature request templates
 ├── .editorconfig
 ├── .prettierrc
+├── .nvmrc                     # Node version pin
+├── .env.example               # Environment variable reference
+├── SECURITY.md                # Vulnerability disclosure policy
+├── CODEOWNERS                 # Default code reviewers
 ├── CONTRIBUTING.md
 └── LICENSE
 ```
@@ -114,21 +133,25 @@ The backend runs on port `4000` and provides the following endpoints:
 
 ## Tech Stack
 
-| Tool | Purpose |
-|---|---|
-| [React 18](https://react.dev) | UI framework |
-| [Vite](https://vitejs.dev) | Build tool and dev server |
-| [Redux Toolkit](https://redux-toolkit.js.org) | State management |
-| [React Router 6](https://reactrouter.com) | Client-side routing |
-| [React-Bootstrap](https://react-bootstrap.netlify.app) | UI components and grid |
-| [React Slick](https://react-slick.neostack.com) | Hero slider |
-| [React Select](https://react-select.com) | Category filter dropdown |
-| [React Toastify](https://fkhadra.github.io/react-toastify) | Cart notifications |
-| [React Spinners](https://www.davidhu.io/react-spinners) | Loading indicator |
-| [Ionicons](https://ionic.io/ionicons) | Icons |
-| [Express](https://expressjs.com) | REST API backend |
-| [Docker](https://docker.com) | Containerization |
-| [GitHub Actions](https://github.com/features/actions) | CI/CD |
+| Tool                                                                  | Purpose                      |
+| --------------------------------------------------------------------- | ---------------------------- |
+| [React 18](https://react.dev)                                         | UI framework                 |
+| [Vite](https://vitejs.dev)                                            | Build tool and dev server    |
+| [Redux Toolkit](https://redux-toolkit.js.org)                         | State management             |
+| [React Router 6](https://reactrouter.com)                             | Client-side routing          |
+| [React-Bootstrap](https://react-bootstrap.netlify.app)                | UI components and grid       |
+| [React Slick](https://react-slick.neostack.com)                       | Hero slider                  |
+| [React Select](https://react-select.com)                              | Category filter dropdown     |
+| [React Toastify](https://fkhadra.github.io/react-toastify)            | Cart notifications           |
+| [React Spinners](https://www.davidhu.io/react-spinners)               | Loading indicator            |
+| [Ionicons](https://ionic.io/ionicons)                                 | Icons                        |
+| [Express](https://expressjs.com)                                      | REST API backend             |
+| [Helmet](https://helmetjs.github.io)                                  | Security headers             |
+| [Morgan](https://github.com/expressjs/morgan)                         | HTTP request logging         |
+| [express-rate-limit](https://github.com/expressjs/express-rate-limit) | Rate limiting                |
+| [Docker](https://docker.com)                                          | Containerization             |
+| [GitHub Actions](https://github.com/actions)                          | CI/CD                        |
+| [Dependabot](https://github.com/dependabot)                           | Automated dependency updates |
 
 ---
 

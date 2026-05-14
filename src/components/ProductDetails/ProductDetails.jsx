@@ -25,7 +25,11 @@ export default function ProductDetails({ selectedProduct }) {
             <h2>{selectedProduct?.productName}</h2>
             <div className="rate">
               <div className="stars">
-                <i className="fa fa-star" /><i className="fa fa-star" /><i className="fa fa-star" /><i className="fa fa-star" /><i className="fa fa-star" />
+                <i className="fa fa-star" />
+                <i className="fa fa-star" />
+                <i className="fa fa-star" />
+                <i className="fa fa-star" />
+                <i className="fa fa-star" />
               </div>
               <span>{selectedProduct?.avgRating} ratings</span>
             </div>
@@ -34,8 +38,16 @@ export default function ProductDetails({ selectedProduct }) {
               <span>Category: {selectedProduct?.category}</span>
             </div>
             <p>{selectedProduct?.shortDesc}</p>
-            <input className="qty-input" type="number" placeholder="Qty" value={quantity} onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value) || 1))} />
-            <button aria-label="Add to cart" type="submit" className="add" onClick={handleAdd}>Add To Cart</button>
+            <input
+              className="qty-input"
+              type="number"
+              placeholder="Qty"
+              value={quantity}
+              onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value) || 1))}
+            />
+            <button aria-label="Add to cart" type="submit" className="add" onClick={handleAdd}>
+              Add To Cart
+            </button>
           </Col>
         </Row>
       </Container>

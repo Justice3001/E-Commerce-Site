@@ -9,10 +9,16 @@ export default function ProductReviews({ selectedProduct }) {
     <section className="product-reviews">
       <Container>
         <ul>
-          <li style={{ color: tab === 'desc' ? '#0f3460' : '#9c9b9b', fontWeight: tab === 'desc' ? 700 : 400 }} onClick={() => setTab('desc')}>
+          <li
+            style={{ color: tab === 'desc' ? '#0f3460' : '#9c9b9b', fontWeight: tab === 'desc' ? 700 : 400 }}
+            onClick={() => setTab('desc')}
+          >
             Description
           </li>
-          <li style={{ color: tab === 'rev' ? '#0f3460' : '#9c9b9b', fontWeight: tab === 'rev' ? 700 : 400 }} onClick={() => setTab('rev')}>
+          <li
+            style={{ color: tab === 'rev' ? '#0f3460' : '#9c9b9b', fontWeight: tab === 'rev' ? 700 : 400 }}
+            onClick={() => setTab('rev')}
+          >
             Reviews ({selectedProduct?.reviews?.length || 0})
           </li>
         </ul>

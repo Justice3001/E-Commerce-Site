@@ -14,7 +14,7 @@ const cartSlice = createSlice({
       const existing = state.cartList.find((item) => item.id === product.id)
       if (existing) {
         state.cartList = state.cartList.map((item) =>
-          item.id === product.id ? { ...item, qty: item.qty + num } : item
+          item.id === product.id ? { ...item, qty: item.qty + num } : item,
         )
       } else {
         state.cartList.push({ ...product, qty: num })
@@ -27,9 +27,7 @@ const cartSlice = createSlice({
       if (existing.qty === 1) {
         state.cartList = state.cartList.filter((item) => item.id !== product.id)
       } else {
-        state.cartList = state.cartList.map((item) =>
-          item.id === product.id ? { ...item, qty: item.qty - 1 } : item
-        )
+        state.cartList = state.cartList.map((item) => (item.id === product.id ? { ...item, qty: item.qty - 1 } : item))
       }
     },
     deleteProduct: (state, action) => {
